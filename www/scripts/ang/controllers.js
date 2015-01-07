@@ -3,15 +3,17 @@
     angular.module("mPlatform.controllers")
         .controller('ProductCtrl', ['$scope', 'products', function ($scope, products) {
             var refresh = function () {
-//$scope.products = storage.getAll();
             }
 
             var searchResult = function (item) {
                 return products.getSearchResults(item)
                     .then(function (data) {
-                        $scope.products = data
+                        $scope.products = data;
+                        $scope.error = "";
                         return data;
-                    }, function (errorMessage) {
+                    }, function (errorMessage,b,c) {
+                    $scope.products = null;
+                    $scope.error = errorMessage;
                         return errorMessage;
                     });
             }

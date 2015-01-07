@@ -26,7 +26,7 @@
        
         .factory("products", ["$rootScope", "$q", "$window", "$resource", function ($rootScope, $q, $window, $resource) {
             var key = ''; // Add your Bing Maps API key
-            var url = 'http://labyrinthapi.kusanii.net/api/product/';
+            var url = 'http://labyrinthapis.kusanii.net/api/product/';
 
             return {
                 getSearchResults: function (searchText) {
@@ -35,8 +35,9 @@
                         .$promise.then(function (response) {
                             return response;
                         }, function (error) {
-                            return "Error" + error;
-                        });
+                            throw error;
+                        //return "Error" + error;
+                    });
                 }
             }
         }])
