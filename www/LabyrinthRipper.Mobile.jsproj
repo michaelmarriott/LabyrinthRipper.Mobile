@@ -137,14 +137,12 @@
     <Content Include="res\native\android\ant.properties" />
     <Content Include="res\native\windows\CordovaApp_TemporaryKey.pfx" />
     <Content Include="scripts\ang\app.js" />
+    <Content Include="scripts\ang\configuraion.js" />
     <Content Include="scripts\ang\controllers.js" />
     <Content Include="scripts\ang\directives.js" />
     <Content Include="scripts\ang\services.js" />
-    <Content Include="scripts\controllers.js" />
-    <Content Include="scripts\directives.js" />
     <Content Include="scripts\frameworks\angular-resource.min.js" />
     <Content Include="scripts\frameworks\angular.min.js" />
-    <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
     <Content Include="res\icons\android\icon-36-ldpi.png" />
@@ -187,7 +185,6 @@
     <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
     <Content Include="res\screens\windows\splashscreen.png" />
     <Content Include="res\screens\wp8\screen-portrait.jpg" />
-    <Content Include="scripts\services.js" />
   </ItemGroup>
   <PropertyGroup>
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>

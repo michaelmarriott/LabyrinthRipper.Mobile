@@ -26,7 +26,7 @@
        
         .factory("products", ["$rootScope", "$q", "$window", "$resource", function ($rootScope, $q, $window, $resource) {
             var key = ''; // Add your Bing Maps API key
-            var url = 'http://localhost:55109/api/product/';
+            var url = 'http://labyrinthapi.kusanii.net/api/product/';
 
             return {
                 getSearchResults: function (searchText) {
